@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_stat_blocks",
+  "info": {
+    "displayName": "Stats"
+  },
+  "options": {},
+  "attributes": {
+    "stats": {
+      "type": "component",
+      "component": "items.stat-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
