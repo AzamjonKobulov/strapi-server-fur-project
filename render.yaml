@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: strapi-backend
+    env: node
+    plan: free
+    buildCommand: yarn install
+    startCommand: yarn start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_KEYS
+        value: your_app_keys_here
+      - key: API_TOKEN_SALT
+        value: your_api_token_salt_here
+      - key: ADMIN_JWT_SECRET
+        value: your_admin_jwt_secret_here
+      - key: JWT_SECRET
+        value: your_jwt_secret_here
+      - key: ENCRYPTION_KEY
+        value: your_encryption_key_here
+      - key: TRANSFER_TOKEN_SALT
+        value: your_transfer_token_salt_here
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 1337
